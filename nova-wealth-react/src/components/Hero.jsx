@@ -16,7 +16,7 @@ export default function Hero({ onOpenModal }) {
                 </video>
 
                 {/* Dark Overlay to ensure text readability */}
-                <div className="absolute inset-0 bg-nw-navydark/40 z-0"></div>
+                <div className="absolute inset-0 bg-nw-navydark/60 z-0 transition-opacity duration-300"></div>
 
                 {/* Subtle background glow effect equivalent to the corporate reference */}
                 <div className="absolute inset-0 w-full h-full opacity-30 pointer-events-none z-0" style={{ background: 'radial-gradient(circle at top center, #b6975a 0%, transparent 60%)' }}></div>
@@ -28,7 +28,7 @@ export default function Hero({ onOpenModal }) {
                         Build a Wealth Strategy<br className="hidden md:block" /> That Works for <span className="text-transparent bg-clip-text bg-gradient-to-r from-nw-gold to-yellow-200">Your Life</span>
                     </h1>
 
-                    <p className="text-base md:text-xl text-white/70 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                    <p className="text-base md:text-xl text-white/90 drop-shadow-md mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
                         Personalized wealth advisory for professionals, entrepreneurs, families, and diaspora investors who want structure, clarity, and long-term confidence.
                     </p>
 
