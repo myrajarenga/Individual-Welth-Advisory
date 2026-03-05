@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Nova Wealth LLP — Individual Wealth Advisory (Rate Card 2026)</title>
+  <meta name="description"
+    content="Personalized wealth advisory for professionals, entrepreneurs, and families. Build a wealth strategy with clarity and long-term confidence." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = { theme: { extend: { colors: { nw: { navy: '#0B1426', gold: '#D4AF37', 'gold-hover': '#B99A2F', 'gold-pale': '#FAF8F2', text: '#0F172A', muted: '#475569', border: '#E2E8F0', soft: '#F8FAFC' } }, fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+  </script>
+  <style>
+    @media print {
+      .no-print {
+        display: none !important
+      }
+
+      table {
+        font-size: 10pt
+      }
+
+      section {
+        page-break-inside: avoid
+      }
+
+      thead {
+        display: table-header-group
+      }
+
+      .print-break {
+        page-break-before: always
+      }
+
+      @page {
+        margin: 1.5cm
+      }
+    }
+
+    .modal-overlay {
+      background: rgba(0, 0, 0, .5);
+      backdrop-filter: blur(4px)
+    }
+  </style>
+</head>
+
+<body class="bg-white text-nw-text font-sans antialiased">
+
+  <!-- ============ HEADER ============ -->
+  <header id="top" class="sticky top-0 z-50 bg-white border-b border-nw-border transition-shadow no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-[72px]">
+      <a href="#top" class="flex items-center gap-2">
+        <!-- LOGO: Replace with <img src="logo.png" alt="Nova Wealth" class="h-8"/> -->
+        <span class="font-extrabold text-nw-navy tracking-[.12em] text-sm md:text-base">NOVA WEALTH</span>
+        <span class="hidden sm:inline text-xs text-nw-muted font-medium tracking-wide">LLP</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-6 text-[13px] font-semibold text-nw-muted">
+        <a href="#approach" class="hover:text-nw-gold transition">Approach</a>
+        <a href="#tiers" class="hover:text-nw-gold transition">Advisory Tiers</a>
+        <a href="#retainer" class="hover:text-nw-gold transition">Fees</a>
+        <a href="#included" class="hover:text-nw-gold transition">Services</a>
+        <a href="#performance" class="hover:text-nw-gold transition">Performance Fee</a>
+        <a href="#started" class="hover:text-nw-gold transition">Get Started</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button onclick="window.print()"
+          class="hidden md:inline-flex text-xs font-semibold text-nw-muted border border-nw-border rounded px-3 py-2 hover:bg-nw-soft transition">Download
+          PDF</button>
+        <button onclick="document.getElementById('bookingModal').classList.remove('hidden')"
+          class="bg-nw-gold text-nw-navy text-xs font-bold px-4 py-2 rounded hover:bg-nw-gold-hover transition">Book
+          Discovery Call</button>
+        <button id="menuBtn" class="lg:hidden flex flex-col gap-[5px] p-1" aria-label="Menu">
+          <span class="w-5 h-[2px] bg-nw-navy transition-all" id="bar1"></span>
+          <span class="w-5 h-[2px] bg-nw-navy transition-all" id="bar2"></span>
+          <span class="w-5 h-[2px] bg-nw-navy transition-all" id="bar3"></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileNav" class="hidden lg:hidden border-t border-nw-border bg-white px-4 pb-4">
+      <nav class="flex flex-col gap-0 text-sm font-semibold text-nw-muted">
+        <a href="#approach" class="py-3 border-b border-nw-border/50 hover:text-nw-gold">Approach</a>
+        <a href="#tiers" class="py-3 border-b border-nw-border/50 hover:text-nw-gold">Advisory Tiers</a>
+        <a href="#retainer" class="py-3 border-b border-nw-border/50 hover:text-nw-gold">Fees</a>
+        <a href="#included" class="py-3 border-b border-nw-border/50 hover:text-nw-gold">Services</a>
+        <a href="#performance" class="py-3 border-b border-nw-border/50 hover:text-nw-gold">Performance Fee</a>
+        <a href="#started" class="py-3 hover:text-nw-gold">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="bg-gradient-to-b from-nw-gold-pale to-white py-20 md:py-28 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-xs font-bold tracking-[.2em] uppercase text-nw-gold mb-4">Individual Wealth Advisory</p>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-nw-navy leading-tight mb-5">Build a Wealth
+        Strategy<br class="hidden sm:block" /> That Works for Your Life</h1>
+      <p class="text-base md:text-lg text-nw-muted mb-4 max-w-2xl mx-auto">Personalized wealth advisory for
+        professionals, entrepreneurs, families, and diaspora investors who want structure, clarity, and long-term
+        confidence.</p>
+      <p class="text-sm text-nw-muted/80 mb-6">Consultancy-based, transparent fees. We design strategies — we don't push
+        products.</p>
+      <div class="flex flex-wrap justify-center gap-3 mb-8">
+        <span
+          class="text-[11px] font-semibold text-nw-muted bg-white border border-nw-border rounded-full px-3 py-1">Confidential
+          | 2025–2026</span>
+        <span
+          class="text-[11px] font-semibold text-nw-gold bg-nw-gold/10 border border-nw-gold/20 rounded-full px-3 py-1">Effective
+          January 2026</span>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-center gap-3">
+        <button onclick="document.getElementById('bookingModal').classList.remove('hidden')"
+          class="bg-nw-gold text-nw-navy font-bold px-6 py-3 rounded hover:bg-nw-gold-hover transition">Book
+          Complimentary Discovery Call</button>
+        <button onclick="window.print()"
+          class="border-2 border-nw-navy text-nw-navy font-bold px-6 py-3 rounded hover:bg-nw-navy hover:text-white transition">Download
+          PDF</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APPROACH ============ -->
+  <section id="approach" class="py-16 md:py-20 px-4 scroll-mt-20">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-xs font-bold tracking-[.18em] uppercase text-nw-gold mb-3">Our Approach</p>
+      <h2 class="text-2xl md:text-3xl font-bold text-nw-navy mb-6">A Personalized Approach to Wealth Advisory</h2>
+      <p class="text-base text-nw-muted leading-relaxed">At Nova Wealth LLP, we believe every individual deserves a
+        personalized wealth strategy, not a generic product. Our fee model is consultancy-based, transparent, and
+        aligned with your outcomes.</p>
+    </div>
+  </section>
+
+  <!-- ============ CLIENT TIERS ============ -->
+  <section id="tiers" class="py-16 md:py-20 px-4 bg-nw-soft scroll-mt-20">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-xs font-bold tracking-[.18em] uppercase text-nw-gold mb-3">Advisory Tiers</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-nw-navy">Client Segment Overview</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Nova Pro -->
+        <div class="bg-white border border-nw-border rounded-xl p-8 hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-extrabold text-nw-navy mb-1">Nova Pro</h3>
+          <p class="text-xs font-semibold uppercase tracking-wider text-nw-muted mb-5">Tier A</p>
+          <div class="space-y-4 text-sm text-nw-muted">
+            <div><span class="font-semibold text-nw-text">Ideal for:</span> Salaried professionals, young families,
+              entrepreneurs earning KES 100k–500k</div>
+            <div><span class="font-semibold text-nw-text">Portfolio range:</span> KES 300,000 – 5,000,000</div>
+            <div><span class="font-semibold text-nw-text">Complexity:</span> 1–2 income streams, basic investment
+              portfolio, life cover, savings goals</div>
+            <div><span class="font-semibold text-nw-text">Assigned advisor:</span> Certified Financial Planner (CFP)
+            </div>
+          </div>
+          <div class="mt-6 pt-5 border-t border-nw-border flex items-center justify-between">
+            <div>
+              <p class="text-xs text-nw-muted uppercase tracking-wider font-semibold">Onboarding</p>
+              <p class="text-lg font-bold text-nw-navy">KES 5,000</p>
+            </div>
+            <button onclick="document.getElementById('bookingModal').classList.remove('hidden')"
+              class="text-xs font-bold border-2 border-nw-navy text-nw-navy px-4 py-2 rounded hover:bg-nw-navy hover:text-white transition">Get
+              Started</button>
+          </div>
+        </div>
+        <!-- Nova Elite -->
+        <div class="bg-white border-2 border-nw-gold rounded-xl p-8 hover:shadow-lg transition-shadow relative">
+          <div
+            class="absolute -top-3 right-6 bg-nw-gold text-nw-navy text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+            Premium</div>
+          <h3 class="text-xl font-extrabold text-nw-gold mb-1">Nova Elite</h3>
+          <p class="text-xs font-semibold uppercase tracking-wider text-nw-muted mb-5">Tier B</p>
+          <div class="space-y-4 text-sm text-nw-muted">
+            <div><span class="font-semibold text-nw-text">Ideal for:</span> Business owners, senior executives, diaspora
+              investors, net worth KES 5M+</div>
+            <div><span class="font-semibold text-nw-text">Portfolio range:</span> KES 5,000,000 – 100,000,000+</div>
+            <div><span class="font-semibold text-nw-text">Complexity:</span> Multiple income streams, offshore assets,
+              business interests, estate planning, tax strategy</div>
+            <div><span class="font-semibold text-nw-text">Assigned advisor:</span> Senior Wealth Advisor + CFP team
+            </div>
+          </div>
+          <div class="mt-6 pt-5 border-t border-nw-gold/30 flex items-center justify-between">
+            <div>
+              <p class="text-xs text-nw-muted uppercase tracking-wider font-semibold">Onboarding</p>
+              <p class="text-lg font-bold text-nw-gold">KES 15,000</p>
+            </div>
+            <button onclick="document.getElementById('bookingModal').classList.remove('hidden')"
+              class="text-xs font-bold bg-nw-gold text-nw-navy px-4 py-2 rounded hover:bg-nw-gold-hover transition">Get
+              Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RETAINER FEES ============ -->
+  <section id="retainer" class="py-16 md:py-20 px-4 scroll-mt-20">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-xs font-bold tracking-[.18em] uppercase text-nw-gold mb-3">Pricing</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-nw-navy">Advisory Retainer Fees</h2>
+      </div>
+      <div class="overflow-x-auto -mx-4 px-4">
+        <table class="w-full min-w-[640px] text-sm border-collapse">
+          <thead>
+            <tr class="bg-nw-navy text-white text-left text-xs font-semibold uppercase tracking-wider">
+              <th class="py-3 px-4 rounded-tl-lg">Engagement</th>
+              <th class="py-3 px-4">Per Session</th>
+              <th class="py-3 px-4">Quarterly</th>
+              <th class="py-3 px-4">Semi-Annual</th>
+              <th class="py-3 px-4 rounded-tr-lg">Annual</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-nw-border hover:bg-nw-gold/5 transition">
+              <td class="py-4 px-4"><strong class="text-nw-text">Essential</strong><br /><span
+                  class="text-[11px] text-nw-muted">Middle Class</span></td>
+              <td class="py-4 px-4">5,000 – 8,000<br /><span class="text-[11px] text-nw-muted">$75 – $155</span></td>
+              <td class="py-4 px-4">12,500 – 20,000<br /><span class="text-[11px] text-nw-muted">$195 – $390</span></td>
+              <td class="py-4 px-4">25,000 – 40,000<br /><span class="text-[11px] text-nw-muted">$350 – $700</span></td>
+              <td class="py-4 px-4">45,000 – 80,000<br /><span class="text-[11px] text-nw-muted">$620 – $1,240</span>
+              </td>
+            </tr>
+            <tr class="border-b border-nw-border hover:bg-nw-gold/5 transition">
+              <td class="py-4 px-4"><strong class="text-nw-text">Elite</strong><br /><span
+                  class="text-[11px] text-nw-gold font-semibold">HNWI</span></td>
+              <td class="py-4 px-4">10,000 – 15,000<br /><span class="text-[11px] text-nw-muted">$390 – $775</span></td>
+              <td class="py-4 px-4">25,000 – 40,000<br /><span class="text-[11px] text-nw-muted">$1,160 – $2,325</span>
+              </td>
+              <td class="py-4 px-4">50,000 – 80,000<br /><span class="text-[11px] text-nw-muted">$2,130 – $4,265</span>
+              </td>
+              <td class="py-4 px-4">100,000 – 160,000<br /><span class="text-[11px] text-nw-muted">$3,875 –
+                  $7,750</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-nw-muted mt-4 flex items-start gap-2"><svg
+          class="w-4 h-4 text-nw-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" />
+          <line x1="12" y1="16" x2="12" y2="12" />
+          <line x1="12" y1="8" x2="12.01" y2="8" />
+        </svg>Retainer tier and engagement type are confirmed in the signed Engagement Letter after your complimentary
+        discovery session.</p>
+    </div>
+  </section>
+
+  <!-- ============ WHAT'S INCLUDED ============ -->
+  <section id="included" class="py-16 md:py-20 px-4 bg-nw-soft scroll-mt-20 print-break">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-xs font-bold tracking-[.18em] uppercase text-nw-gold mb-3">Service Comparison</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-nw-navy">What's Included</h2>
+      </div>
+      <div class="overflow-x-auto -mx-4 px-4">
+        <table class="w-full min-w-[540px] text-sm border-collapse">
+          <thead>
+            <tr class="bg-nw-navy text-white text-xs font-semibold uppercase tracking-wider">
+              <th class="py-3 px-4 text-left rounded-tl-lg">Service Component</th>
+              <th class="py-3 px-4 text-center">Nova Pro</th>
+              <th class="py-3 px-4 text-center rounded-tr-lg">Nova Elite</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-nw-border">
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Comprehensive Financial Plan</td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Quarterly Consultations</td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Investment Strategy & Asset Allocation</td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Risk Profile Assessment</td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Portfolio Monitoring & Rebalancing</td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Retirement Planning</td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Insurance Needs Analysis</td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Priority 24-hr Response</td>
+              <td class="py-3 px-4 text-center text-gray-300">—</td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Tax Optimization Strategy</td>
+              <td class="py-3 px-4 text-center text-gray-300">—</td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Estate & Succession Planning</td>
+              <td class="py-3 px-4 text-center text-gray-300">—</td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Offshore / Diaspora Investment Structuring</td>
+              <td class="py-3 px-4 text-center text-gray-300">—</td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Multi-currency Portfolio Guidance</td>
+              <td class="py-3 px-4 text-center text-gray-300">—</td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Comprehensive Wealth Review</td>
+              <td class="py-3 px-4 text-center text-xs font-semibold text-nw-muted">Annual</td>
+              <td class="py-3 px-4 text-center text-xs font-semibold text-nw-gold">Bi-annual</td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Dedicated Senior Advisor</td>
+              <td class="py-3 px-4 text-center text-gray-300">—</td>
+              <td class="py-3 px-4 text-center"><span class="text-emerald-600 font-bold">✓</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Remaining sections continue in the same file -->
+  <!-- ============ PERFORMANCE FEE ============ -->
+  <section id="performance" class="py-16 md:py-20 px-4 scroll-mt-20">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-10">
+        <p class="text-xs font-bold tracking-[.18em] uppercase text-nw-gold mb-3">Incentive Alignment</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-nw-navy mb-4">Portfolio Performance Fee</h2>
+        <p class="text-sm text-nw-muted max-w-2xl mx-auto">Nova Wealth earns a performance fee only when your portfolio
+          grows. This fee is charged on net portfolio growth, calculated after deducting all fees and excluding new
+          contributions.</p>
+      </div>
+      <div class="bg-nw-navy rounded-xl p-6 md:p-8 text-center mb-10 max-w-3xl mx-auto">
+        <p class="text-[11px] font-bold tracking-[.18em] uppercase text-nw-gold mb-3">Performance Fee Formula</p>
+        <p class="font-mono text-sm md:text-base text-white leading-relaxed">Performance Fee = Rate × (Closing Value −
+          Opening Value − Net New Contributions)</p>
+        <p class="text-xs text-white/60 mt-3">No portfolio growth in a given period = zero performance fee payable.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <div class="border border-nw-border rounded-xl p-6 text-center">
+          <p class="text-3xl font-extrabold text-nw-gold">8%</p>
+          <p class="font-bold text-nw-text mt-1">Nova Pro</p>
+          <p class="text-xs text-nw-muted mt-1">of net growth · Billed annually (January)</p>
+          <p class="text-xs text-nw-muted mt-3 italic">Charged only on verified net portfolio appreciation above opening
+            value + new contributions. No growth = no fee.</p>
+        </div>
+        <div class="border-2 border-nw-gold rounded-xl p-6 text-center">
+          <p class="text-3xl font-extrabold text-nw-gold">5%</p>
+          <p class="font-bold text-nw-text mt-1">Nova Elite</p>
+          <p class="text-xs text-nw-muted mt-1">of net growth · Billed annually or semi-annually</p>
+          <p class="text-xs text-nw-muted mt-3 italic">High-water mark applies; charged only when the portfolio
+            surpasses the previous peak. Calculated per agreed IPS benchmark.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMMISSION DISCLOSURE ============ -->
+  <section class="py-16 md:py-20 px-4 bg-nw-soft scroll-mt-20 print-break">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-xs font-bold tracking-[.18em] uppercase text-nw-gold mb-3">Transparency</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-nw-navy">Commission Disclosure</h2>
+      </div>
+      <div class="overflow-x-auto -mx-4 px-4">
+        <table class="w-full min-w-[640px] text-sm border-collapse">
+          <thead>
+            <tr class="bg-nw-navy text-white text-xs font-semibold uppercase tracking-wider">
+              <th class="py-3 px-4 text-left rounded-tl-lg">Partner / Product</th>
+              <th class="py-3 px-4 text-left">Commission Range</th>
+              <th class="py-3 px-4 text-left rounded-tr-lg">Disclosure Policy</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-nw-border">
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Life & General Insurance</td>
+              <td class="py-3 px-4">0.5% – 2.0%</td>
+              <td class="py-3 px-4 text-nw-muted">Disclosed in writing before any product recommendation. You are never
+                obligated to purchase.</td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Unit Trusts & Collective Schemes</td>
+              <td class="py-3 px-4">0.5% – 1.5%</td>
+              <td class="py-3 px-4 text-nw-muted">Client retains full right to select any fund manager independently.
+              </td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Bank Mortgages & Structured Deposits</td>
+              <td class="py-3 px-4">0.5% – 1.0%</td>
+              <td class="py-3 px-4 text-nw-muted">Commission paid by the institution, not deducted from client funds.
+              </td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Pension & Retirement Plans</td>
+              <td class="py-3 px-4">0.5% – 1.5%</td>
+              <td class="py-3 px-4 text-nw-muted">Annual commission statement issued each January for full transparency.
+              </td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Real Estate / Property Referrals</td>
+              <td class="py-3 px-4">1.0% – 3.0%</td>
+              <td class="py-3 px-4 text-nw-muted">Paid by developer or agent. No cost or obligation to client.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SPECIALIST SERVICES ============ -->
+  <section class="py-16 md:py-20 px-4 scroll-mt-20">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-xs font-bold tracking-[.18em] uppercase text-nw-gold mb-3">Add-On Services</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-nw-navy">Specialist & Add-On Services</h2>
+      </div>
+      <div class="overflow-x-auto -mx-4 px-4">
+        <table class="w-full min-w-[540px] text-sm border-collapse">
+          <thead>
+            <tr class="bg-nw-navy text-white text-xs font-semibold uppercase tracking-wider">
+              <th class="py-3 px-4 text-left rounded-tl-lg">Service</th>
+              <th class="py-3 px-4 text-left">Fee (KES)</th>
+              <th class="py-3 px-4 text-left rounded-tr-lg">Notes</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-nw-border">
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Comprehensive One-Off Financial Plan</td>
+              <td class="py-3 px-4">20,000 – 50,000</td>
+              <td class="py-3 px-4 text-nw-muted">Full plan: net worth analysis, goals roadmap, risk profile, investment
+                strategy</td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Estate & Succession Planning Advisory</td>
+              <td class="py-3 px-4">50,000 – 150,000</td>
+              <td class="py-3 px-4 text-nw-muted">Will structuring, trust advisory, beneficiary planning. Legal costs
+                separate.</td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Diaspora / Offshore Investment Structuring</td>
+              <td class="py-3 px-4">50,000 – 200,000</td>
+              <td class="py-3 px-4 text-nw-muted">Cross-border portfolio, remittance optimization, forex strategy</td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-medium">Hourly Advisory (ad-hoc)</td>
+              <td class="py-3 px-4">5,000 – 12,000/hr</td>
+              <td class="py-3 px-4 text-nw-muted">Minimum 1 hour. Senior advisor at upper range. Invoiced same day.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW TO GET STARTED ============ -->
+  <section id="started" class="py-16 md:py-20 px-4 bg-nw-soft scroll-mt-20">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-14">
+        <p class="text-xs font-bold tracking-[.18em] uppercase text-nw-gold mb-3">Your Journey</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-nw-navy">How to Get Started</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div
+            class="w-12 h-12 bg-nw-gold text-nw-navy rounded-full flex items-center justify-center text-lg font-extrabold mx-auto mb-4">
+            1</div>
+          <h3 class="font-bold text-nw-text mb-2 text-sm">Complimentary Discovery Call</h3>
+          <p class="text-xs text-nw-muted">30-minute consultation to understand your goals and financial situation.</p>
+        </div>
+        <div class="text-center">
+          <div
+            class="w-12 h-12 bg-nw-gold text-nw-navy rounded-full flex items-center justify-center text-lg font-extrabold mx-auto mb-4">
+            2</div>
+          <h3 class="font-bold text-nw-text mb-2 text-sm">Custom Proposal</h3>
+          <p class="text-xs text-nw-muted">Receive a tailored advisory proposal with recommended tier and services.</p>
+        </div>
+        <div class="text-center">
+          <div
+            class="w-12 h-12 bg-nw-gold text-nw-navy rounded-full flex items-center justify-center text-lg font-extrabold mx-auto mb-4">
+            3</div>
+          <h3 class="font-bold text-nw-text mb-2 text-sm">Onboarding & KYC</h3>
+          <p class="text-xs text-nw-muted">Complete risk profiling, sign engagement letter, and finalize advisory
+            relationship.</p>
+        </div>
+        <div class="text-center">
+          <div
+            class="w-12 h-12 bg-nw-gold text-nw-navy rounded-full flex items-center justify-center text-lg font-extrabold mx-auto mb-4">
+            4</div>
+          <h3 class="font-bold text-nw-text mb-2 text-sm">Begin Your Wealth Journey</h3>
+          <p class="text-xs text-nw-muted">First planning session within 5 business days. Your path to clarity starts
+            here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAYMENT TERMS ============ -->
+  <section class="py-16 md:py-20 px-4 scroll-mt-20 print-break">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-xs font-bold tracking-[.18em] uppercase text-nw-gold mb-3">Terms</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-nw-navy">Payment Terms & Conditions</h2>
+      </div>
+      <div class="overflow-x-auto -mx-4 px-4">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-nw-navy text-white text-xs font-semibold uppercase tracking-wider">
+              <th class="py-3 px-4 text-left rounded-tl-lg w-1/4">Term</th>
+              <th class="py-3 px-4 text-left rounded-tr-lg">Detail</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-nw-border">
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-semibold text-nw-text align-top">Retainer Fees</td>
+              <td class="py-3 px-4 text-nw-muted">Payable upfront. Annual retainers may be split 50/50 (January & July)
+                by prior agreement.</td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-semibold text-nw-text align-top">Per-Session Fees</td>
+              <td class="py-3 px-4 text-nw-muted">Payable before or on the day of session. No session held without
+                confirmed payment.</td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-semibold text-nw-text align-top">Performance Fee</td>
+              <td class="py-3 px-4 text-nw-muted">Invoiced in January (annual) or January & July (semi-annual). Payment
+                due within 30 days.</td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-semibold text-nw-text align-top">Onboarding Fee</td>
+              <td class="py-3 px-4 text-nw-muted">KES 5,000 (Pro) / KES 15,000 (Elite). Non-refundable. Covers KYC and
+                client profiling.</td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-semibold text-nw-text align-top">Late Payment</td>
+              <td class="py-3 px-4 text-nw-muted">2% per month after 7-day grace period. Services may be paused after 30
+                days of non-payment.</td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-semibold text-nw-text align-top">Payment Methods</td>
+              <td class="py-3 px-4 text-nw-muted">Bank transfer (EFT/SWIFT), M-Pesa, Airtel Money, cheque. KES or USD
+                (CBK rate on invoice date).</td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-semibold text-nw-text align-top">Refund Policy</td>
+              <td class="py-3 px-4 text-nw-muted">Sessions non-refundable once conducted. Retainers pro-rata refund for
+                unused portion on early termination.</td>
+            </tr>
+            <tr class="hover:bg-nw-gold/5">
+              <td class="py-3 px-4 font-semibold text-nw-text align-top">VAT</td>
+              <td class="py-3 px-4 text-nw-muted">All fees exclusive of VAT at 16% where applicable.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="bg-nw-gold py-16 md:py-20 px-4 no-print">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-nw-navy mb-3">Ready to get clarity on your money?</h2>
+      <p class="text-sm text-nw-navy/70 mb-8">Book a complimentary discovery call and get a recommended advisory tier
+        based on your goals.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-3">
+        <button onclick="document.getElementById('bookingModal').classList.remove('hidden')"
+          class="bg-nw-navy text-white font-bold px-6 py-3 rounded hover:bg-black transition">Book Discovery
+          Call</button>
+        <button onclick="window.print()"
+          class="border-2 border-nw-navy text-nw-navy font-bold px-6 py-3 rounded hover:bg-nw-navy hover:text-white transition">Download
+          Rate Card PDF</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-nw-navy text-white py-12 px-4 no-print">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+      <div>
+        <span class="font-extrabold tracking-[.12em] text-nw-gold text-sm">NOVA WEALTH</span><span
+          class="text-xs text-white/40 ml-1">LLP</span>
+        <p class="text-sm text-white/60 mt-2">Nairobi, Kenya</p>
+      </div>
+      <div>
+        <p class="text-xs font-bold uppercase tracking-wider text-nw-gold mb-3">Contact</p>
+        <a href="mailto:info@novawealth.co.ke"
+          class="block text-sm text-white/70 hover:text-nw-gold transition mb-1">info@novawealth.co.ke</a>
+        <a href="https://www.novawealth.co.ke" target="_blank"
+          class="block text-sm text-white/70 hover:text-nw-gold transition">www.novawealth.co.ke</a>
+      </div>
+      <div>
+        <p class="text-xs font-bold uppercase tracking-wider text-nw-gold mb-3">Navigate</p>
+        <a href="#approach" class="block text-sm text-white/70 hover:text-nw-gold transition mb-1">Approach</a>
+        <a href="#tiers" class="block text-sm text-white/70 hover:text-nw-gold transition mb-1">Advisory Tiers</a>
+        <a href="#retainer" class="block text-sm text-white/70 hover:text-nw-gold transition mb-1">Fees</a>
+        <a href="#included" class="block text-sm text-white/70 hover:text-nw-gold transition">Services</a>
+      </div>
+    </div>
+    <div
+      class="max-w-5xl mx-auto mt-8 pt-6 border-t border-white/10 flex flex-wrap justify-between text-xs text-white/40">
+      <p>&copy; 2026 Nova Wealth LLP. All rights reserved.</p>
+      <p>Effective 2025–2026</p>
+    </div>
+  </footer>
+
+  <!-- ============ BOOKING MODAL ============ -->
+  <div id="bookingModal" class="hidden fixed inset-0 z-[200] flex items-center justify-center p-4 no-print">
+    <div class="modal-overlay absolute inset-0"
+      onclick="document.getElementById('bookingModal').classList.add('hidden')"></div>
+    <div class="relative bg-white rounded-xl shadow-2xl w-full max-w-md p-6 md:p-8 z-10 max-h-[90vh] overflow-y-auto">
+      <button onclick="document.getElementById('bookingModal').classList.add('hidden')"
+        class="absolute top-4 right-4 text-nw-muted hover:text-nw-text text-xl font-bold">&times;</button>
+      <h3 class="text-lg font-bold text-nw-navy mb-1">Book Your Discovery Call</h3>
+      <p class="text-xs text-nw-muted mb-6">Your first consultation is completely free. Fill in your details below.</p>
+      <form id="bookingForm" class="space-y-4"
+        onsubmit="event.preventDefault();document.getElementById('bookingForm').classList.add('hidden');document.getElementById('successMsg').classList.remove('hidden')">
+        <div><label class="block text-xs font-semibold text-nw-text mb-1">Full Name *</label><input required type="text"
+            class="w-full border border-nw-border rounded px-3 py-2 text-sm focus:outline-none focus:border-nw-gold" />
+        </div>
+        <div><label class="block text-xs font-semibold text-nw-text mb-1">Email *</label><input required type="email"
+            class="w-full border border-nw-border rounded px-3 py-2 text-sm focus:outline-none focus:border-nw-gold" />
+        </div>
+        <div><label class="block text-xs font-semibold text-nw-text mb-1">Phone</label><input type="tel"
+            class="w-full border border-nw-border rounded px-3 py-2 text-sm focus:outline-none focus:border-nw-gold" />
+        </div>
+        <div><label class="block text-xs font-semibold text-nw-text mb-1">Preferred Time</label><input type="text"
+            placeholder="e.g. Weekday mornings"
+            class="w-full border border-nw-border rounded px-3 py-2 text-sm focus:outline-none focus:border-nw-gold" />
+        </div>
+        <div><label class="block text-xs font-semibold text-nw-text mb-1">Notes</label><textarea rows="3"
+            class="w-full border border-nw-border rounded px-3 py-2 text-sm focus:outline-none focus:border-nw-gold resize-none"></textarea>
+        </div>
+        <button type="submit"
+          class="w-full bg-nw-gold text-nw-navy font-bold py-3 rounded hover:bg-nw-gold-hover transition">Submit
+          Request</button>
+      </form>
+      <div id="successMsg" class="hidden text-center py-8">
+        <div class="w-14 h-14 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4"><svg
+            class="w-7 h-7 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg></div>
+        <h4 class="font-bold text-nw-navy text-lg mb-2">Request Received!</h4>
+        <p class="text-sm text-nw-muted">Our team will reach out within 24 hours to schedule your discovery call.</p>
+        <button
+          onclick="document.getElementById('bookingModal').classList.add('hidden');document.getElementById('bookingForm').classList.remove('hidden');document.getElementById('successMsg').classList.add('hidden');document.getElementById('bookingForm').reset()"
+          class="mt-6 text-xs font-semibold text-nw-gold hover:underline">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const mb = document.getElementById('menuBtn'), mn = document.getElementById('mobileNav');
+    mb.addEventListener('click', () => { mn.classList.toggle('hidden'); const o = !mn.classList.contains('hidden'); document.getElementById('bar1').style.transform = o ? 'translateY(7px) rotate(45deg)' : ''; document.getElementById('bar2').style.opacity = o ? '0' : '1'; document.getElementById('bar3').style.transform = o ? 'translateY(-7px) rotate(-45deg)' : ''; });
+    mn.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mn.classList.add('hidden'); document.getElementById('bar1').style.transform = ''; document.getElementById('bar2').style.opacity = '1'; document.getElementById('bar3').style.transform = ''; }));
+    document.querySelector('.header').classList.toggle('shadow-md', window.scrollY > 50);
+    window.addEventListener('scroll', () => document.querySelector('.header').classList.toggle('shadow-md', window.scrollY > 50));
+  </script>
+</body>
+
+</html>

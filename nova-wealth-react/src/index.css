@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+
+    table {
+        font-size: 10pt;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    .print-break {
+        page-break-before: always;
+    }
+
+    @page {
+        margin: 1.5cm;
+    }
+}
+
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
