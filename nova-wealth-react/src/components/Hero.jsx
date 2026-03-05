@@ -3,7 +3,7 @@ import heroVideo from '../Videos/Wealth_Management.mp4';
 export default function Hero({ onOpenModal }) {
     return (
         <>
-            <section className="relative pt-24 pb-32 md:pt-40 md:pb-48 px-4 flex flex-col items-center justify-center min-h-[80vh] bg-nw-navydark overflow-hidden">
+            <section className="relative pt-32 pb-40 md:pt-48 md:pb-56 px-4 flex flex-col items-center justify-center min-h-[100svh] min-h-screen bg-nw-navydark overflow-hidden">
                 {/* Background Video */}
                 <video
                     autoPlay
@@ -16,7 +16,7 @@ export default function Hero({ onOpenModal }) {
                 </video>
 
                 {/* Dark Overlay to ensure text readability */}
-                <div className="absolute inset-0 bg-nw-navydark/80 z-0"></div>
+                <div className="absolute inset-0 bg-nw-navydark/40 z-0"></div>
 
                 {/* Subtle background glow effect equivalent to the corporate reference */}
                 <div className="absolute inset-0 w-full h-full opacity-30 pointer-events-none z-0" style={{ background: 'radial-gradient(circle at top center, #b6975a 0%, transparent 60%)' }}></div>

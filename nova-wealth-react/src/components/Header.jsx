@@ -16,7 +16,7 @@ export default function Header({ onOpenModal }) {
     const closeMenu = () => setIsMobileMenuOpen(false);
 
     return (
-        <header id="top" className={`sticky top-0 z-50 bg-nw-navy transition-all duration-300 no-print ${isScrolled ? 'shadow-[0_4px_20px_rgba(0,0,0,0.4)]' : ''}`}>
+        <header id="top" className={`fixed top-0 w-full z-50 transition-all duration-300 no-print ${isScrolled ? 'bg-nw-navy shadow-[0_4px_20px_rgba(0,0,0,0.4)]' : 'bg-transparent'}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-[80px]">
                 <a href="#top" className="flex items-center">
                     <img src={logo} alt="Nova Wealth LLP" className="w-[200px] h-auto object-contain" />
